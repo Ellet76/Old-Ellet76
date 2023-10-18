@@ -1,5 +1,5 @@
 {
-	"name": "NamnsHemsida",
+	"name": "Den bästa hemsidan av dem alla",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -10,7 +10,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "^1.25.2",
 		"autoprefixer": "^10.4.14",
 		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.27",
