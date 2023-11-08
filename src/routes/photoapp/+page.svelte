@@ -32,6 +32,7 @@
         max-width: 80%;
         align-items: center;
         justify-content: space-around;
+        overflow: hidden;
     }
     .image-wrapper img
     {

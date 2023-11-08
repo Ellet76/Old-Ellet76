@@ -31,9 +31,11 @@ function handleSubmit()
         <label for="food">Favourite Food: </label>
         <input  id="food" type="text" bind:value={food}>
         
-        <button type="submit">Register</button>
+        <button type="submit">Log in</button>
     </form>
-    <p>Have an Account? <a href="/login">Log in</a></p>
+    <div>
+        <p>Dont have an Account? <a href="/register">Register</a></p>
+    </div>
 </div>
 
 <style>
