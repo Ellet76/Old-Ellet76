@@ -8,6 +8,7 @@
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">PhotoApp</a>
+  <a href="/register">Register Temp</a>
   <a
     target="_blank" rel="noreferrer"
     href="https://github.com/lisaviktorsson/lisaviktorsson.github.com"
