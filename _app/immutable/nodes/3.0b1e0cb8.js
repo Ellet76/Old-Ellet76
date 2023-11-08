@@ -1,4 +1,4 @@
-import{S as v,i as E,s as k,C as L,k as m,q as S,a as b,J as q,l as _,m as $,r as C,h as r,c as I,n as d,D as h,b as y,E as N,F as A,G as D,g as F,d as G}from"../chunks/index.31d8fbf1.js";function J(o){let s,l,f,i,a,c;const u=o[1].default,t=L(u,o,o[0],null);return{c(){s=m("link"),l=m("style"),f=S(`nav {
+import{S as v,i as E,s as k,C as L,k as m,q as S,a as b,J as q,l as _,m as $,r as C,h as r,c as I,n as d,D as h,b as y,E as N,F as A,G as D,g as F,d as G}from"../chunks/index.a9b9ac8b.js";function J(o){let s,l,f,i,a,c;const u=o[1].default,t=L(u,o,o[0],null);return{c(){s=m("link"),l=m("style"),f=S(`nav {
       margin-left: 10%;
       margin-right: 10%;
     }`),i=b(),a=m("main"),t&&t.c(),this.h()},l(e){const n=q("svelte-1lc4dl3",document.head);s=_(n,"LINK",{rel:!0,href:!0}),l=_(n,"STYLE",{});var p=$(l);f=C(p,`nav {

@@ -5,7 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/11.a48c3b48.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/9.b1ff85ac.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.b856a061.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.a9b9ac8b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.a3db34cb.js">
@@ -15,7 +15,7 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.8b7571fc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.cb81596c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/11.48e1f152.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/9.e2f99869.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -30,13 +30,24 @@
 
 <hr>
 
-<title>PhotoApp
-</title> 
-<h1>PhotoApp
-</h1>
-<div class="photos svelte-ya06wo"><div class="image-wrapper svelte-ya06wo"><img src="https://i.redd.it/rofzm44oka091.png" alt="flexbox rules" class="svelte-ya06wo"></div>
-    <div class="image-wrapper svelte-ya06wo"><img src="https://i.redd.it/vd9dc7wfk9471.png" alt="flexbox rules" class="svelte-ya06wo"></div>
-    <div class="image-wrapper svelte-ya06wo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRBBpxt5B1_wx42L-ne7ljT7mgyxfEMOCrXQ&amp;usqp=CAU" alt="flexbox vsgridbox" class="svelte-ya06wo"></div>
+<h1>Registration form</h1>
+<div><form class="svelte-13f4q9g"><label for="firstName">First Name: </label>
+        <input id="firstName" type="text">
+
+        <label for="lastName">Last Name: </label>
+        <input id="lastName" type="text">
+
+        <label for="email">Email: </label>
+        <input id="email" type="text">
+
+        <label for="password">Password: </label>
+        <input id="password" type="text">
+
+        <label for="food">Favourite Food: </label>
+        <input id="food" type="text">
+        
+        <button type="submit">Log in</button></form>
+    <div><p>Dont have an Account? <a href="/register">Register</a></p></div>
 </div>
 
 
@@ -57,7 +68,7 @@
 						import("./_app/immutable/entry/app.8b7571fc.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 11],
+							node_ids: [0, 9],
 							data,
 							form: null,
 							error: null
