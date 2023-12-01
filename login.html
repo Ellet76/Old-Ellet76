@@ -5,17 +5,17 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/9.b1ff85ac.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.49805f2c.js">
+		<link href="./_app/immutable/assets/10.39da4305.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.b1933b5d.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.a9b9ac8b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.839b6c61.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.fbf3ab04.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.64f7f1fc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.516722f3.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.44968748.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.cb81596c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/9.21403a2e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.2a4fd38c.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/10.752619c9.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -26,26 +26,24 @@
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">PhotoApp</a>
   <a href="/login">Log in</a>
+  <a href="/Todo">To do</a>
   <a target="_blank" rel="noreferrer" href="https://github.com/Ellet76/Ellet76.github.io">GitHub</a></nav>
 
 <hr>
 
-<h1>Login form</h1>
-<div><form class="svelte-13f4q9g"><label for="email">Email: </label>
-        <input id="email" type="text">
-
-        <label for="password">Password: </label>
-        <input id="password" type="text">
+<h1 class="svelte-12o7zmq">Login form</h1>
+<div class="formstyle svelte-12o7zmq"><form class="svelte-12o7zmq"><input id="email" type="text" placeholder="E-mail" class="svelte-12o7zmq">
+        <input id="password" type="text" placeholder="password" class="svelte-12o7zmq">
         
-        <button type="submit">Log in</button></form>
-    <div><p>Dont have an Account? <a href="/register">Register</a></p></div>
+        <button type="submit">Register</button></form>
+    <p class="svelte-12o7zmq">Dont have an Account? <a href="/register">Register</a></p>
 </div>
 
 
 			
 			<script>
 				{
-					__sveltekit_lq3l84 = {
+					__sveltekit_1c43j6g = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -55,11 +53,11 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.49805f2c.js"),
-						import("./_app/immutable/entry/app.516722f3.js")
+						import("./_app/immutable/entry/start.b1933b5d.js"),
+						import("./_app/immutable/entry/app.44968748.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 9],
+							node_ids: [0, 10],
 							data,
 							form: null,
 							error: null
