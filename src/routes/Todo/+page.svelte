@@ -9,7 +9,6 @@
         const add = document.getElementById("task").value;
         not_Done = [...not_Done, add]
     }
-
     function RemoveFromNotDone(index)
     {
         not_Done = not_Done.filter((_, i) => i !== index);
@@ -44,52 +43,32 @@
                 <button on:click={Add}>Submit</button>
             </div>
 
-            <div class="list">
-                <ol>
-                    {#each not_Done as item (item)}
-                    <li>{item}</li>
-                    {/each}
-                </ol>
-                <ul>
-                    {#each not_Done as item, index (item)}
-                        <li>
+            <ol>
+                {#each not_Done as item, index(item)}
+                    <li>
+                        <dir class="list">
+                            {item}
                             <button id="list_button" on:click={() => SetItemToDone(index)}>Done</button>
-                        </li>
-                    {/each}
-                </ul>
-                <ul>
-                    {#each not_Done as item, index (item)}
-                        <li>
                             <button id="list_button" on:click={() => RemoveFromNotDone(index)}>Remove</button>
-                        </li>
-                    {/each}
-                </ul>
-            </div>
+                        </dir>
+                    </li>
+                {/each}
+            </ol>
         </div>
 
         <div style="display: grid;">
             <h1 class="text">Done</h1>
-            <div class="list">
-                <ol>
-                    {#each done as item (item)}
-                    <li>{item}</li>
-                    {/each}
-                </ol>
-                <ul>
-                    {#each done as item, index (item)}
-                        <li>
-                            <button id="list_button" on:click={() => SetItemToNotDone(index)}>Done</button>
-                        </li>
-                    {/each}
-                </ul>
-                <ul>
-                    {#each done as item, index (item)}
-                        <li>
+            <ol>
+                {#each done as item, index(item)}
+                    <li>
+                        <dir class="list">
+                            {item}
+                            <button id="list_button" on:click={() => SetItemToNotDone(index)}>Not Done</button>
                             <button id="list_button" on:click={() => RemoveFromDone(index)}>Remove</button>
-                        </li>
-                    {/each}
-                </ul>
-            </div>
+                        </dir>
+                    </li>
+                {/each}
+            </ol>
         </div>
     </div>
 </div>
@@ -113,8 +92,8 @@
     }
     .list{
         display: grid;
-        width: 100%;
-        grid-template-columns: 4fr 1fr 1fr;
+        width: 90%;
+        grid-template-columns: 3fr 1fr 1fr;
     }
     #list_button{
         width: 100%;
@@ -124,18 +103,16 @@
         display: grid;
         width: 100%;
         grid-template-columns: 90% 10%;
+        max-height: 20px;
     }
 
     .text{
         padding-left: 20px;
+        max-height: 35px;
     }
 
     ol{
         list-style-type: upper-roman;
-    }
-
-    ul{
-        list-style: none;
     }
 
     input:focus{
