@@ -5,18 +5,17 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/6.f7f68aa0.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.b1933b5d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.a9b9ac8b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.fbf3ab04.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.64f7f1fc.js">
+		<link href="./_app/immutable/assets/6.d09ec170.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.b8106ede.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.324ac3e5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.f43363f8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.b29eeff4.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.44968748.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.26f5115c.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.2a4fd38c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/6.85b0325f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_commonjsHelpers.668aeb87.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.d39d89eb.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.eb01bc5b.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -32,21 +31,27 @@
 
 <hr>
 
-<div class="container svelte-ltobm2"><h1 class="text svelte-ltobm2">Todo
+<div class="container svelte-eq8ulv"><h1 class="text svelte-eq8ulv">Todo list
     </h1>
-    <div class="layout svelte-ltobm2"><div style="display: grid"><h1 class="text svelte-ltobm2">New</h1>
-            <ol class="svelte-ltobm2"><li>objekt 1</li>
-                <li>objekt 2</li></ol>
-            <input type="text" class="svelte-ltobm2"></div>
-        <div style="display: grid;"><h1 class="text svelte-ltobm2">Done</h1>
-            <input type="text" class="svelte-ltobm2"></div></div>
+    <div class="layout svelte-eq8ulv"><div style="display: grid"><h1 class="text svelte-eq8ulv">New</h1>
+            
+            <div class="list svelte-eq8ulv"><ol class="svelte-eq8ulv"></ol>
+                <ul class="svelte-eq8ulv"></ul>
+                <ul class="svelte-eq8ulv"></ul></div>
+            <div class="submit svelte-eq8ulv"><input id="task" type="text" class="svelte-eq8ulv">
+                <button>Submit</button></div></div>
+
+        <div style="display: grid;"><h1 class="text svelte-eq8ulv">Done</h1>
+            <div class="list svelte-eq8ulv"><ol class="svelte-eq8ulv"></ol>
+                <ul class="svelte-eq8ulv"></ul>
+                <ul class="svelte-eq8ulv"></ul></div></div></div>
 </div>
 
 
 			
 			<script>
 				{
-					__sveltekit_1c43j6g = {
+					__sveltekit_1vl4khr = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -56,8 +61,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.b1933b5d.js"),
-						import("./_app/immutable/entry/app.44968748.js")
+						import("./_app/immutable/entry/start.b8106ede.js"),
+						import("./_app/immutable/entry/app.26f5115c.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 6],
