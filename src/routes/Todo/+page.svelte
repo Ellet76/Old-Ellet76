@@ -39,6 +39,11 @@
         <div style="display: grid">
             <h1 class="text">New</h1>
             
+            <div class="submit">
+                <input id="task" type="text">
+                <button on:click={Add}>Submit</button>
+            </div>
+
             <div class="list">
                 <ol>
                     {#each not_Done as item (item)}
@@ -59,10 +64,6 @@
                         </li>
                     {/each}
                 </ul>
-            </div>
-            <div class="submit">
-                <input id="task" type="text">
-                <button on:click={Add}>Submit</button>
             </div>
         </div>
 
