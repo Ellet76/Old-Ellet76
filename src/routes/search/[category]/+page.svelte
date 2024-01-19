@@ -1,6 +1,13 @@
 <script>
+    import { atRule } from 'postcss';
+
   /** @type {import('./$types').PageData} */
   export let data;
+
+  function split_key(key, pos_in_key){
+    let value = key.split(",")
+    return key[pos_in_key]
+  }
 </script>
 
 
@@ -10,7 +17,13 @@
   <!-- TODO: Style the results -->
   <div>
     {#each data.response as item}
-      <article><p>{JSON.stringify(item)}</p></article>
+    <article>
+      {#each Object.entries(item) as [key,value]}
+        <article>>
+          {key}: {value}
+        </article>
+      {/each}
+    </article>
     {/each}
   </div>
 </main>

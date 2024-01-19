@@ -5,23 +5,27 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.6d038e13.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.624990d8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e0287a7d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.cc3fcc0e.js">
+		<link href="./_app/immutable/assets/8.f0a54540.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.1b67578f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.d86649d9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.be883475.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8cba85bf.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.dc57fbe2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.2c0193d8.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.dbce1fa5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/8.de181076.js"><!-- HEAD_svelte-gynwln_START --><style>nav {
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.2cd0c5b9.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/8.87733052.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.77cb9d57.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_commonjsHelpers.d4b30cbb.js"><!-- HEAD_svelte-2vsxa2_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
       margin-left: 10%;
       margin-right: 10%;
     }
-  </style><!-- HEAD_svelte-gynwln_END -->
+  </style><!-- HEAD_svelte-2vsxa2_END -->
 	</head>
 	<body>
 		<div style="display: contents">
+
 
 
 <nav><a href="/">Hem</a>
@@ -29,7 +33,9 @@
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">PhotoApp</a>
   <a href="/login">Log in</a>
-  <a href="/Todo">To do</a>
+  <a href="/Todo">Todo</a>
+  <a href="/chat">Chatbot</a>
+  
   <a target="_blank" rel="noreferrer" href="https://github.com/Ellet76/Ellet76.github.io">GitHub</a></nav>
 
 <hr>
@@ -37,15 +43,22 @@
 
 
 <div class="container"><h1>TODO: Complete assignment</h1>
-  <div class="scrollable">
-    <article><span>Is something troubling you ?</span></article></div>
-  <form method="post"><input type="text" name="text"></form></div>
+  <div class="scrollable"><article><div>Today I you help can yes?</div>
+        <div>Elizabot</div>
+        <div>_</div></article>
+    <article id="visible" class="svelte-1j8uccr"><span class="circle svelte-1j8uccr"></span>
+      <span class="circle svelte-1j8uccr"></span>
+      <span class="circle svelte-1j8uccr"></span></article></div>
+  <form method="post"><input type="text" name="text">    
+   <button type="button" name="button">Reset</button></form>
+  
+</div>
 
 
 			
 			<script>
 				{
-					__sveltekit_wbay5x = {
+					__sveltekit_w1nr4p = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -55,8 +68,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.6d038e13.js"),
-						import("./_app/immutable/entry/app.dc57fbe2.js")
+						import("./_app/immutable/entry/start.1b67578f.js"),
+						import("./_app/immutable/entry/app.2c0193d8.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 8],
