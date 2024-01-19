@@ -42,7 +42,7 @@
     } else {
       alert("chill");
     }
-  }
+  } 
 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -57,7 +57,8 @@
   let red_player = 0;
   let blue_player = 0;
   let active_player = "blue"
-  let images = ["Image_1.jpg", "Image_2.jpg", "Image_3.jpg", "Image_4.jpg", "Image_5.jpg", "Image_6.jpg"]
+  let images = ["Image_1.jpg", "Image_2.jpg", "Image_3.jpg", "Image_4.jpg", "Image_5.jpg", "Image_6.jpg",
+                "Image_1.jpg", "Image_2.jpg", "Image_3.jpg", "Image_4.jpg", "Image_5.jpg", "Image_6.jpg" ]
 
 
   function StartUp(){
@@ -68,7 +69,7 @@
     blue_player = 0;
     active_player = "blue"
 
-    for (let index = 0; index < 12/2; index++) {
+    for (let index = 0; index < 6; index++) {
       cards.push({
         id: index,
         img: images[index], // TODO: unique images per card card
@@ -131,7 +132,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(6, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
   }
 
   @media (max-width:800px){
