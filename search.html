@@ -5,21 +5,25 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.f9d71a5f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.0dada26d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.65d89055.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.e3f062d0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.524e74cd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.230cd71b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.ccb3619d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.87a72ca1.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.c2cf8273.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.5c452a83.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.5fbc8b7c.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.e07e50e5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.39616a02.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/15.7247c8db.js"><!-- HEAD_svelte-mz6nhh_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.82a716c1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.e0616e89.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/15.e2f2bb07.js"><!-- HEAD_svelte-dhqrw9_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
       margin-left: 10%;
       margin-right: 10%;
     }
-  </style><!-- HEAD_svelte-mz6nhh_END -->
+    .container{
+      width:90vw;
+      margin: 100px;
+    }
+  </style><!-- HEAD_svelte-dhqrw9_END -->
 	</head>
 	<body>
 		<div style="display: contents">
@@ -33,7 +37,7 @@
   <a href="/login">Log in</a>
   <a href="/Todo">Todo</a>
   <a href="/chat">Chatbot</a>
-  
+  <a href="/search">Search</a>
   <a target="_blank" rel="noreferrer" href="https://github.com/Ellet76/Ellet76.github.io">GitHub</a></nav>
 
 <hr>
@@ -49,7 +53,7 @@
 			
 			<script>
 				{
-					__sveltekit_rhq834 = {
+					__sveltekit_1jvwo6v = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -59,8 +63,8 @@
 					const data = [null,null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.f9d71a5f.js"),
-						import("./_app/immutable/entry/app.5c452a83.js")
+						import("./_app/immutable/entry/start.524e74cd.js"),
+						import("./_app/immutable/entry/app.5fbc8b7c.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3, 15],

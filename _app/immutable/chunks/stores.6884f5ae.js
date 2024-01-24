@@ -1,0 +1,1 @@
+import{w as t}from"./index.87a72ca1.js";const s=(window==null?void 0:window.localStorage.getItem("story_id"))??"1",r=t([{user:"Elizabot",text:"Today I you help can yes?"}]),e=t(s);e.subscribe(o=>{window==null||window.localStorage.setItem("story_id",o),console.log(o)});export{e as a,r as s};
