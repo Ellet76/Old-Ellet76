@@ -1,31 +1,107 @@
 <script>
-    import { atRule } from 'postcss';
 
   /** @type {import('./$types').PageData} */
   export let data;
 
-  function split_key(key, pos_in_key){
-    let value = key.split(",")
-    return key[pos_in_key]
+  function checkType(vari) {
+    if(typeof vari == "object"){
+      return vari
+    }
+    else{
+      return {"":vari}
+    }
   }
+  function fixColon(key){
+    if(key == ""){
+      return key
+    }
+    else{
+      return key+": "
+    }
+  }
+
 </script>
 
 
 <main>
   <h2>{"Showing results for: " + data.params.category}</h2>
   <hr />
-  <!-- TODO: Style the results -->
-  <div>
+  <div class="{data.params.category} general">
     {#each data.response as item}
     <article>
+      <div class="header general">{item.id}</div>
+      <l>
       {#each Object.entries(item) as [key,value]}
-        <article>>
-          {key}: {value}
-        </article>
+        <li class="grid {key}">
+          <div>{key}: </div>
+          <div class="grid">
+            {#each Object.entries(checkType(value)) as [key2, value2]}
+              <div>{fixColon(key2)}</div>
+              <div class={value2}>{value2}</div>
+              
+            {/each} 
+          </div>
+        </li>
       {/each}
+      </l>
     </article>
     {/each}
   </div>
 </main>
+
+<style>
+  main{
+    width: 100%;
+  }
+  article{
+    width: 1350px;
+  }
+  
+  
+  .general{
+    font-family: 'Courier New', Courier, monospace;
+    color:aliceblue
+  }
+  .users{
+    color: blue;
+  }
+  .addresses{
+    color: green;
+  }
+  .banks{
+    color: aqua;
+  }
+
+
+  .id{
+    color: red;
+  }
+  .uid{
+    color: red;
+  }
+  .password{
+    color: red;
+  }
+  .city{
+    color: red;
+  }
+  .account_number{
+    color: red;
+  }
+  .Female{
+    color: pink;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 5px;
+  }
+  .header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
 
  

@@ -11,7 +11,7 @@
   <a href="/login">Log in</a>
   <a href="/Todo">Todo</a>
   <a href="/chat">Chatbot</a>
-  
+  <a href="/search">Search</a>
   <a
     target="_blank" rel="noreferrer"
     href="https://github.com/Ellet76/Ellet76.github.io"
