@@ -34,11 +34,15 @@
       {#each Object.entries(item) as [key,value]}
         <li class="grid {key}">
           <div>{key}: </div>
-          <div class="grid">
+          <div class="grid2">
             {#each Object.entries(checkType(value)) as [key2, value2]}
               <div>{fixColon(key2)}</div>
-              <div class={value2}>{value2}</div>
-              
+              <div class="grid2">
+                {#each Object.entries(checkType(value2)) as [key3, value3]}
+                  <div>{fixColon(key3)}</div>
+                  <div class={value3}>{value3}</div>
+                {/each}
+              </div>
             {/each} 
           </div>
         </li>
@@ -96,6 +100,10 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     margin: 5px;
+  }
+  .grid2{
+    display: grid;
+    grid-template-columns: 150px 1fr;
   }
   .header{
     font-size: 30px;
