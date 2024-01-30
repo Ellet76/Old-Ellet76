@@ -2,7 +2,7 @@
     import { fade, fly } from 'svelte/transition';
   
     // Define parallax layers
-    const layers = [0, 1, 2, 3];
+    const layers = ["https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg", "/Random_pixelart_1.png"];
   
     // Define messages for scrollytelling
     const messages = [
@@ -10,8 +10,14 @@
       'More scrolling...',
       'Almost there...',
       'You did it!',
-      'You are done!'
-    ];
+      "hohohoho",
+      "I am evil",
+      "Not really",
+      "Im just lonely",
+      "Though...",
+      "I might be evil😎",
+      "🥐🥐🥐🥐🥐🥐🥐🥐🥐🥐🥐",
+      "🛺🛺🛺🛺🛺🛺🛺🛺🛺🛺🛺"];
   
     // Initialize scroll position, message index, and fader
     let y = 0;
@@ -19,7 +25,7 @@
     let fader = true;
     $: currentMessage = messages[currentMessageIndex];
     // Calculate the step size for message changes
-    const step = Math.floor(600 / messages.length);
+    const step = Math.floor(4400 / messages.length);
 
     // Function to handle scroll events
     function handleScroll() {
@@ -31,6 +37,12 @@
       // Update the fader state based on message change
       fader = currentMessageIndex === tempIndex;
     }
+
+    function findIndex(array, object){
+      // Base 1
+      console.log(array.indexOf(object) + 1)
+      return array.indexOf(object) + 1
+    }
   </script>
   
   <svelte:window bind:scrollY={y} on:scroll={handleScroll} />
@@ -38,11 +50,12 @@
   <main>
     <!-- Parallax container for layers -->
     <div class="container">
-      {#each layers as layer}
+      {#each layers as image}
+        <p>{image, findIndex(layers, image)}</p>
         <img
-          style="transform: translate(0, {y < 2 ? y * layer : -y * layer / (layers.length - 1)}px)"
-          src={`https://www.devsamples.com/parallax-layer${layer}.png`}
-          alt={`parallax layer ${layer}`}
+          style="transform: translate(0, {y < 2 ? y * findIndex(layers, image) : -y * findIndex(layers, image) / (layers.length - 1)}px) "
+          src={image}
+          alt={`parallax layer ${findIndex(layers, image)}`}
         >
       {/each}
     </div>
@@ -51,10 +64,10 @@
     <div class="text">
         {#if fader && currentMessageIndex > 0}
           <!-- Animate text with fly-in and fade-out transitions -->
-            <div class="story" in:fly={{ y: 200, duration: 2000 }} out:fade>
+            <div class="story" in:fly={{ y: 200, duration: 0 }} out:fade>
                 <p>You have scrolled {y} pixels</p>
                 <p>{currentMessage}</p>
-                <img src="https://www.onlygfx.com/wp-content/uploads/2021/02/6-pixel-heart-1.png" alt="heart"> 
+                <img src="/Image_5.jpg" alt="hmmmmmm"> 
             </div>
           {:else if currentMessageIndex === 0 }
           <p>You have scrolled {y} pixels</p>
@@ -67,11 +80,12 @@
     :global(body) {
       margin: 0;
       padding: 0;
-      background-color: #121212;
+      background-image: url("Image_4_but_black.png");
+      background-size: contain;
     }
   
     main {
-      height: 1200px;
+      height: 5000px;
     }
  
     .story img{
@@ -104,9 +118,6 @@
       z-index: 1;
       width: 100%;
       color: white;
-
     }
-  
-
   </style>
   

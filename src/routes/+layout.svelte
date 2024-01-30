@@ -12,6 +12,7 @@
   <a href="/Todo">Todo</a>
   <a href="/chat">Chatbot</a>
   <a href="/search">Search</a>
+  <a href="/scroll">Scroll</a>
   <a
     target="_blank" rel="noreferrer"
     href="https://github.com/Ellet76/Ellet76.github.io"

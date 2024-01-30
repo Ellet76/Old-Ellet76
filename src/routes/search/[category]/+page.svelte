@@ -103,7 +103,7 @@
   }
   .grid2{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
   }
   .header{
     font-size: 30px;
