@@ -2,7 +2,7 @@
     import { fade, fly } from 'svelte/transition';
   
     // Define parallax layers
-    const layers = ["https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg", "/Random_pixelart_1.png"];
+    const layers = ["/Image_2-removebg.jpg", "/Random_pixelart_1.png"];
   
     // Define messages for scrollytelling
     const messages = [
@@ -80,12 +80,12 @@
     :global(body) {
       margin: 0;
       padding: 0;
-      background-image: url("Image_4_but_black.png");
-      background-size: contain;
     }
   
     main {
       height: 5000px;
+      background-image: url("Image_4_but_black.jpg");
+      background-size: contain;
     }
  
     .story img{
