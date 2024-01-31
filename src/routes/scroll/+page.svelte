@@ -84,7 +84,7 @@
   
     main {
       height: 5000px;
-      background-image: url("Image_4_but_black.jpg");
+      background-image: url("/Image_4_but_black.jpg");
       background-size: contain;
     }
  
