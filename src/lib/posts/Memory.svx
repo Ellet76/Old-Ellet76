@@ -1,0 +1,46 @@
+---
+title: Vecka 5
+
+date: "2024-01-31"
+keywords: ["Memory"]
+---
+<script>
+    import { CodeBlock } from '@skeletonlabs/skeleton';
+</script>
+Memory
+
+A regular memory where you flip and match different cards.
+
+
+Funktionen nedan används för att starta memoryt
+
+<div style="width: 90%;">
+    <CodeBlock language="js" code={`
+    <script>
+    function StartUp(){
+        cards = [];
+        flipped_cards = []
+        flipcount = 0  
+        red_player = 0;
+        blue_player = 0;
+        active_player = "blue"
+
+        for (let index = 0; index < 6; index++) {
+        cards.push({
+            id: index,
+            img: images[index], // TODO: unique images per card card
+            flipped: false,  // TODO: think
+            completed: false,
+        });
+
+        cards.push({
+            id: index,
+            img: images[index], // TODO: unique images per card card
+            flipped: false,  // TODO: think
+            completed: false,
+        });
+        }
+    </script>
+    `}>
+    </CodeBlock>
+</div>

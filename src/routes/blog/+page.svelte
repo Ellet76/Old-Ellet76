@@ -1,5 +1,6 @@
 <script>
   /** @type {import('./$types').PageData} */
+  import { CodeBlock } from '@skeletonlabs/skeleton';
   export let data;
 </script>
 

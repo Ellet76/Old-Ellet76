@@ -40,7 +40,6 @@
 
     function findIndex(array, object){
       // Base 1
-      console.log(array.indexOf(object) + 1)
       return array.indexOf(object) + 1
     }
   </script>

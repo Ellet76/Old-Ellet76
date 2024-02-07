@@ -1,6 +1,6 @@
 <script>
-    import '../../app.css'
-
+  import '../../app.pcss'
+  import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
 

@@ -1,3 +1,8 @@
+<script>
+	import { CodeBlock } from '@skeletonlabs/skeleton';
+</script>
+
+
 <h1 class="name">
 	Välkommen till min hemsida!
 </h1>
