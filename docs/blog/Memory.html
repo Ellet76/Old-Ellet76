@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/app.2ad1f3d3.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/2.c2308f58.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ProgressBar.5dbe98d7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.1e248bf7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.be43a727.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.203fb725.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.72626080.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/parse.bee59afc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.f96f0af3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.9b8ede83.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.16c0b680.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.910e1116.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/8.3dd1f6b9.js">
+	</head>
+	<body data-theme="skeleton">
+		<div style="display: contents">
+
+
+
+<nav><a href="/">Hem</a>
+  <a href="/memory">Memory</a>
+  <a href="/telltale">Telltale</a>
+  <a href="/photoapp">PhotoApp</a>
+  <a href="/login">Log in</a>
+  <a href="/registerButBetter">Register</a>
+  <a href="/Todo">Todo</a>
+  <a href="/chat">Chatbot</a>
+  <a href="/search">Search</a>
+  <a href="/scroll">Scroll</a>
+  <a href="/blog">Blogg</a>
+  <a target="_blank" rel="noreferrer" href="https://github.com/Ellet76/Ellet76.github.io">GitHub</a></nav>
+
+<hr>
+
+<main class="container svelte-lj7r42">
+
+
+<article><h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-grey">Vecka 5</h1>
+  <p class="my-4 text-lg text-gray-500">Published: 2024-01-31</p>
+  <p>Memory</p>
+<p>A regular memory where you flip and match different cards.</p>
+<p>Funktionen nedan används för att starta memoryt</p>
+<div style="width: 90%;">
+<div class="codeblock overflow-hidden shadow bg-neutral-900/90  text-sm text-white rounded-container-token shadow " data-testid="codeblock">
+	<header class="codeblock-header text-xs text-white/50 uppercase flex justify-between items-center p-2 pl-4">
+		<span class="codeblock-language">javascript</span>
+		
+		<button type="button" class="codeblock-btn btn btn-sm variant-soft !text-white">Copy</button></header>
+	
+	<pre class="codeblock-pre whitespace-pre-wrap break-all p-4 pt-1"><code class="codeblock-code language-js lineNumbers">&lt;script>
+    function StartUp(){
+        cards = [];
+        flipped_cards = []
+        flipcount = 0  
+        red_player = 0;
+        blue_player = 0;
+        active_player = "blue"
+&lt;p>        for (let index = 0; index &lt; 6; index++) {
+cards.push({
+id: index,
+img: images[index], // TODO: unique images per card card
+flipped: false,  // TODO: think
+completed: false,
+});&lt;/p>
+&lt;p>        cards.push({
+id: index,
+img: images[index], // TODO: unique images per card card
+flipped: false,  // TODO: think
+completed: false,
+});
+}&lt;/p>
+    &lt;/script></code></pre></div></div></article>
+</main>
+
+
+			
+			<script>
+				{
+					__sveltekit_1xv1vqz = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.1e248bf7.js"),
+						import("../_app/immutable/entry/app.f96f0af3.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
