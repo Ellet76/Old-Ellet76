@@ -15,6 +15,8 @@
   <a href="/search">Search</a>
   <a href="/scroll">Scroll</a>
   <a href="/blog">Blogg</a>
+  <a href="/RunAround-Game">Game</a>
+  <a href="/Webshop">Webshop</a>
   <a target="_blank" rel="noreferrer" href="https://github.com/Ellet76/Ellet76.github.io">GitHub</a>
 </nav>
 
