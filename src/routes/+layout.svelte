@@ -21,5 +21,6 @@
 </nav>
 
 <hr>
+<hr>
 
 <slot></slot>
